@@ -1,3 +1,10 @@
+/*
+0 - 600px         Mobile
+600 - 900px       Tablet portrait
+900 - 1200px      Tablet landscap
+[1200 - 1800px]   our nomal styles apply
+1800px+           Big Desktop 
+*/
 *,
 *::after,
 *::before {
