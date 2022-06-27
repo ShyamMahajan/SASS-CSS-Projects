@@ -12,6 +12,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
     border-radius: 3px;
@@ -179,7 +180,6 @@
     background-color: $color-white;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
-
     &__side {
       height: auto;
       position: relative;
@@ -187,7 +187,7 @@
 
       &--back {
         transform: rotateY(0deg);
-        clip-path: polygon(0 15%, 100% 0, 100% 100%,0% 100%);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
       }
     }
 
@@ -195,10 +195,10 @@
       transform: rotateY(0deg);
     }
 
-    &__details { 
+    &__details {
       padding: 1rem 3rem;
     }
-   
+
     //Back Styling
 
     &__cta {
