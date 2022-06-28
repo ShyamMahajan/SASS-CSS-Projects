@@ -173,7 +173,8 @@
     font-weight: 100;
   }
 
-  @include respond(tab-port) {
+  //(hover:none) is for touch devices where hover is not posible
+  @media only screen and (max-width: 75em), only screen and (hover: none) {
     //Functionality
     height: auto;
     border-radius: 3px;
